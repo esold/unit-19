@@ -1,0 +1,301 @@
+/* header nav */
+.navigation {
+    text-align: center;
+    color: #FDFDFC;
+    align-items: center;
+
+}
+.inline-block{
+    font-size: 20px;
+    padding-top: 40px;
+    padding-left: 200px;
+}
+.navigation h1{
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    padding-top: 100px;
+}
+.navigation p{
+    font-size: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: left;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.navigation button{
+    background-color:#FDFDFC;
+    color: black;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+}
+.logo{ 
+    background-image: url("..Images\Hcclogo.png");
+    float: left;
+}
+.logo img{
+    width: 75px;
+}
+header{
+    background-image: linear-gradient(to bottom,rgba(18, 18, 18, 1), rgba(0, 0, 0, 0)), url("../images/Hero.png");
+    height: 863px;
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+    background-size: cover;
+    position: relative;
+}
+.inline-block ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.inline-block li{
+    float: left;
+    padding: 10px;
+}
+li:hover{
+    text-decoration-line: underline;
+}
+.navigation h1{
+    text-align: center;
+    font-size: 75px;
+    font-family: 'Noto Serif', serif;
+}
+/* body */
+.batPaddle, .happyHour, .rock{
+    color: white;
+    margin-left: 250px;
+}
+.s1{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.green{
+    background-color: #B0E2B6;
+    display: grid;
+    align-items: center;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "batPaddle"
+    "happyHour"
+    "rock";
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+.batPaddle{
+    grid-area: batPaddle;
+    background-image: url("../images/BatPaddle.png");
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 100px;
+}
+p{
+    width: 700px;
+}
+.date{
+    float: left;
+    font-size: 30px;
+}
+.happyHour{
+    grid-area: happyHour;
+    background-image: url("../images/HappyHour.png");
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 100px;
+}
+.rock{
+    grid-area: rock;
+    background-image: url("../images/rockClimmbing.png");
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 100px;
+}
+.s2 button{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    background-color: #00381A;
+    color: #FDFDFC;
+    border-radius: 5px;
+    width: 300px;
+    height: 50px;
+}
+.title{
+   font-size: 75px;
+   font-family: 'Noto Serif', serif;
+   text-align: center;
+}
+.imageGrid{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.pic1, .pic2{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.pic1{
+    z-index: 1;
+    filter: blur(2pt);
+}
+.pic2{
+    z-index: 2;
+    
+}
+
+.pic3, .pic4{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.pic3{
+    z-index: 1;
+    filter: blur(2pt);
+}
+.pic4{
+    z-index: 2;
+    margin-left: 30px;
+}
+
+.buttonGrid{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.button1{
+    grid-column: 1;
+}
+.button2{
+    grid-column: 2;
+}
+
+hr{
+    width: 80%;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#0A0A0A;
+    border: 0 none;
+    margin-top: 100px;
+    margin-bottom:1px;
+}
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: row;
+    padding-top: 200px;
+}
+#links {
+    flex: 20;
+}
+#links ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-left: 100px;
+  }
+#logos{
+    padding-right: 50px;
+    padding-bottom: 50px;
+    flex: 4;
+} 
+@media (max-width: 600px){
+    .s1 {
+     padding: 0px;
+     margin: 0px;
+    }
+ }
+ 
+ @media (max-width: 600px) {
+    .green {
+     /* background-repeat: repeat; */
+     padding-right: 0px;
+     padding-left: 0px;
+     padding-top: 0px;
+    }
+ }
+ 
+ @media (max-width: 600px) {
+     .batPaddle{
+         padding: 20px;
+         margin-left: 15px;
+         width: 43.5%;
+         background-size: contain;
+         height: 83%;
+     }
+ }
+ @media (max-width: 600px) {
+     .batPaddle p{
+         width:70%;
+     }
+ }
+ 
+ 
+ @media (max-width: 600px) {
+     #batDesc{
+         display: none;
+     }
+ }
+ 
+ @media (max-width: 600px) {
+     .happyHour{
+         padding: 20px;
+         margin-left: 15px;
+         width: 43.5%;
+         background-size: contain;
+         height: 200%;
+     }
+ }
+ 
+ @media (max-width: 600px) {
+     .happyHour p{
+         width:70%;
+     }
+ }
+ 
+ @media (max-width: 600px) {
+     #happyDesc{
+         display: none;
+     }
+ }
+ /* @media (max-width: 600px) {
+     .rock{
+         padding: 20px;
+         margin-left: 15px;
+         width: 43.5%;
+         height: 200px;
+         background-size: contain;
+     }    everytime i tried to add this card it completly messed up my other cards 
+ } */
+ 
+ @media (max-width: 600px) {
+     .pic1, .pic2{
+         grid-row: 1;
+     }
+ }
+ @media (max-width: 600px) {
+     .button1{
+         grid-row: 2;
+     }
+ }
+ @media (max-width: 600px) {
+     .pic3, .pic4{
+         grid-column: 1;
+         grid-row: 3;
+         padding-top: 40px;
+     }
+ }
+ @media (max-width: 600px) {
+     .button2{
+         grid-column: 1;
+         grid-row: 4;
+     }
+ }
