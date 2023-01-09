@@ -55,15 +55,19 @@ header{
     float: left;
     padding: 10px;
 }
+.inline-block{
+    position: absolute;
+}
 .sub{
     list-style: none;
     float: inline-start;
-    width: 120px;
+    width: 85px;
     height: 220px;
     line-height: 20px;
     text-align: left;
     background-color: #FDFDFC;
     display: none;
+    font-size: 15px;
 }
 .sub li a{
     border: 1px #FDFDFC;
@@ -71,7 +75,7 @@ header{
     height: 100%;
     display: block;
     color: #121212;
-
+    text-decoration: none;
 }
 li:hover{
     text-decoration-line: underline;
